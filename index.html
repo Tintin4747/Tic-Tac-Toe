@@ -3,18 +3,37 @@
        <meta charset="utf-8">
        <title>Tic-Tac-Toe</title>
        <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+       <script type="text/javascript" src="tic-tac-toe.js"></script>
     </head>
-    <body>
+    <body style="min-width: 1000px;">
 		<div class="wrapper">
-			<div id="0"></div>
-			<div id="1"></div>
-			<div id="2"></div>
-			<div id="3"></div>
-			<div id="4"></div>
-			<div id="5"></div>
-			<div id="6"></div>
-			<div id="7"></div>
-			<div id="8"></div>
+			<div class="grid" id="0" onclick="cliquer(this.id)"> <img id="img0" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="1" onclick="cliquer(this.id)"> <img id="img1" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="2" onclick="cliquer(this.id)"> <img id="img2" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="3" onclick="cliquer(this.id)"> <img id="img3" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="4" onclick="cliquer(this.id)"> <img id="img4" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="5" onclick="cliquer(this.id)"> <img id="img5" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="6" onclick="cliquer(this.id)"> <img id="img6" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="7" onclick="cliquer(this.id)"> <img id="img7" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
+			<div class="grid" id="8" onclick="cliquer(this.id)"> <img id="img8" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="> </div>
 		</div>
+		<br>
+		<div id="Rbutton" style="text-align:center; visibility:hidden;">
+			<button onclick="rejouer()">Rejouer</button>
+		</div>
+
+		<div class="left" id="finish">
+			C'est au tour de <span id="tour"></span>
+		</div>
+		
+		<div class ="right" id="score">
+			<div>
+				Score X : <span id="score_x">0</span> 
+			</div>
+			<div>
+				Score O : <span id="score_o">0</span> 
+			</div>
+		</div>
+		
     </body>
 </html>

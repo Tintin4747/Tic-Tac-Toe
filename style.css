@@ -1,12 +1,45 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(3, 250px);
+  grid-auto-rows: 250px;
+  width: 750px;
+  margin: auto;
 }
 * {box-sizing: border-box;}
 
 .wrapper > div {
   border: 2px solid #000000;
-  background-color: #ffffff;
-  color: #d9480f;
+}
+
+img {
+  margin: 5px;
+  padding: 15px;
+  width: 95%;
+}
+
+button{
+  background-color: #db5858;
+  border: none;
+  color: white;
+  padding: 20px 50px;
+  transition-duration: 0.4s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.left{
+  margin-top: -480px;
+  float: left;
+  position: relative;
+}
+
+.right{
+  margin-top: -490px;
+  float: right;
+  position: relative;
 }
