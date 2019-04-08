@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-My first project
+My first project with someone.
