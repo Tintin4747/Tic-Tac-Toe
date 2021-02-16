@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-My first project with someone.
+My first project on GitHub
